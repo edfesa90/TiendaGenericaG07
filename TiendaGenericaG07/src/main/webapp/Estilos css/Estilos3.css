@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(Imagenes/Imagen1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font: 1em Comic Sans ms;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 33px;
+    margin: 5px;
+}
+
+.titulo {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 0%, rgba(9, 9, 121, 0.8) 35%, rgba(0, 212, 255, 0.8) 100%);
+    background-attachment: fixed;
+    position: fixed;
+    top: 0px;
+    height: 6%;
+    width: 100%;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.5);
+    height: 96%;
+    width: 90%;
+    text-align: center;
+    padding: 0px;
+    padding-left: 6%;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    text-align: center;
+}
+
+nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0.85) 0%, rgba(9, 9, 121, 0.85) 35%, rgba(0, 212, 255, 0.85) 100%);
+    background-attachment: fixed;
+    position: fixed;
+    left: 0px;
+    top: 6%;
+    height: 96%;
+    width: 10%;
+}
+
+.logo {
+    height: 6%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+img {
+    height: 45px;
+}
+
+.b {
+    width: 96%;
+    height: 6%;
+    text-align: left;
+    font-size: 23;
+    text-decoration: none;
+    display: flex;
+    background: #0000004b;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 1%;
+    left: 2%;
+    margin-bottom: 3px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.b:hover {
+    background: #5757574b;
+}
+
+.b:active {
+    background: #9999994b;
+}
+
+h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.acciones {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-size: 18;
+    display: inline-block;
+    background: #000a6383;
+    color: #fff;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+}
+
+.acciones:hover {
+    background: #1a23729a;
+}
+
+.acciones:active {
+    background: #4346639a;
+}
+
+.padre {
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    background: rgba(255, 255, 255, 0);
+    width: 180px;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+}
+
+input {
+    font-size: 15px;
+    width: 230px;
+    height: 40px;
+    left: 10px;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 15px 5px;
+    border-radius: 5px;
+}
+
+table {
+    font-size: 20px;
+}
+
+.edit {
+    margin-top: 20px;
+    width: 230px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.Canti {
+    margin-top: 20px;
+    width: 80px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.mas {
+    width: 200px;
+    text-align: center;
+    padding-right: 25px;
+}
+
+.Cant {
+    width: 80px;
+}
+
+.segunda {
+    padding-left: 10.8%;
+}
+
+.tercera {
+    position: absolute;
+    right: 400px;
+}
+
+.Confirmar {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-size: 18;
+    display: inline-block;
+    background: #000a6383;
+    color: #fff;
+    position: relative;
+    top: 200px;
+    right: 30px;
+    border-radius: 10px;
+}
+
+.Confirmar:hover {
+    background: #1a23729a;
+}
+
+.Confirmar:active {
+    background: #4346639a;
+}

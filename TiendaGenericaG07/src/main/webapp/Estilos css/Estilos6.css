@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(Imagenes/Imagen1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font: 1em Comic Sans ms;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    font-size: 33px;
+    padding-left: 8px;
+}
+
+.titulo {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 0%, rgba(9, 9, 121, 0.8) 35%, rgba(0, 212, 255, 0.8) 100%);
+    background-attachment: fixed;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 6%;
+    width: 100%;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.5);
+    height: 96%;
+    width: 100%;
+    text-align: center;
+    padding-left: 35px;
+    position: fixed;
+    top: 6%;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+form {
+    font-size: 25px;
+    height: 100%;
+    width: 70%;
+    position: relative;
+    top: 15px;
+    left: 10%;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    background: rgba(255, 255, 255, 0);
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    padding: 0px 5px;
+    margin: 25px 5px;
+    display: inline-block;
+}
+
+input {
+    font-size: 20px;
+    width: 350px;
+    height: 40px;
+    left: 10px;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 15px 5px;
+    border-radius: 5px;
+}
+
+.acciones {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-size: 23;
+    display: inline-block;
+    background: #000a6383;
+    color: #fff;
+    padding: 5px 8px;
+    margin: 5px 6px;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.acciones:hover {
+    background: #1a23729a;
+}
+
+.acciones:active {
+    background: #4346639a;
+}
+
+
+div {
+    background: rgba(255, 255, 255, 0.192);
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+p {
+	position: relative;	
+}
