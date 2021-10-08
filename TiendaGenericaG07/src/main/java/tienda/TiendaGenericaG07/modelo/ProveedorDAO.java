@@ -13,7 +13,7 @@ public class ProveedorDAO {
 	public boolean insertProv(Proveedor prov) {
 		
 		Conexion con = new Conexion();
-		String sql = "INSERT INTO proveedores (nitproveedor, ciudad_proveedor, direccion_proveedor, nombre_proveedor_ telefono_proveedor) VALUES (?,?,?,?,?)";
+		String sql = "INSERT INTO proveedores (nitproveedor, ciudad_proveedor, direccion_proveedor, nombre_proveedor, telefono_proveedor) VALUES (?,?,?,?,?)";
 		try {		
 			PreparedStatement ps = con.getConexion().prepareStatement(sql);
 			ps.setInt(1, prov.getNitProveedor());
@@ -113,5 +113,8 @@ public class ProveedorDAO {
 		}
 		return false;
 	}
+	
+	
+	
 
 }

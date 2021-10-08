@@ -1,5 +1,7 @@
 package tienda.TiendaGenericaG07.controlador;
 
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,6 +47,25 @@ public class CtrProveedor {
 		}
 		return false;
 		
+	}
+	
+	public Proveedor listarProveedor(int nitproveedor) {
+		Conexion con =new Conexion();
+		 
+		try {
+			Statement stm = con.getConexion().createStatement();
+			String sql = "SELECT * FROM tiendagenerica07.proveedores WHERE nitproveedor = '"+nitproveedor+"'";
+			ResultSet rs = stm.executeQuery(sql);
+			if(rs.next()) {
+				return (new Proveedor(rs.getInt("nitproveedor"),rs.getString("ciudad_proveedor"), rs.getString("direccion_proveedor"), rs.getString("nombre_proveedor"), rs.getString("telefono_proveedor")));
+			}	
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+		return null;
 	}
 	
 

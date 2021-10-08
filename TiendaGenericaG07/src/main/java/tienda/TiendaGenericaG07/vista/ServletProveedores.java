@@ -31,35 +31,37 @@ public class ServletProveedores extends HttpServlet {
 		String crear = "Crear";
 		String borrar = "Borrar";
 		String actualizar = "Actualizar";
-		//String consultar = "Consultar";
+		String consultar = "Consultar";
+		
+		Integer nitproveedor = Integer.parseInt(request.getParameter("nitproveedor")!= null? request.getParameter("nitproveedor"):"");
+		String ciudad_proveedor = (String) request.getParameter("ciudad_proveedor")!= null? request.getParameter("ciudad_proveedor"):"";
+		String direccion_proveedor = (String) request.getParameter("direccion_proveedor")!= null? request.getParameter("direccion_proveedor"):"";
+		String nombre_proveedor = (String) request.getParameter("nombre_proveedor")!= null? request.getParameter("nombre_proveedor"):"";
+		String telefono_proveedor = (String) request.getParameter("telefono_proveedor")!= null? request.getParameter("telefono_proveedor"):"";
 		
 		if (crear.equals(boton)) {
-			Integer nitproveedor = Integer.parseInt(request.getParameter("nitproveedor"));
-			String ciudad_proveedor = (String) request.getParameter("ciudad_proveedor");
-			String direccion_proveedor = (String) request.getParameter("direccion_proveedor");
-			String nombre_proveedor = (String) request.getParameter("nombre_proveedor");
-			String telefono_proveedor = (String) request.getParameter("telefono_proveedor");
+			
 			System.out.println(nitproveedor + ciudad_proveedor + direccion_proveedor + nombre_proveedor + telefono_proveedor);
 			Proveedor nit = new Proveedor(nitproveedor, ciudad_proveedor, direccion_proveedor, nombre_proveedor, telefono_proveedor);
-			
 			lista = ctrl.registrarProveedor(nit);
+			
 		}else if(borrar.equals(boton)){
-			Integer nitproveedor = Integer.parseInt(request.getParameter("nitproveedor"));
+			
 			ctrl.borrarProveedor(nitproveedor);			
 			
 		}else if(actualizar.equals(boton)){
-			Integer nitproveedor = Integer.parseInt(request.getParameter("nitproveedor"));
-			String ciudad_proveedor = (String) request.getParameter("ciudad_proveedor");
-			String direccion_proveedor = (String) request.getParameter("direccion_proveedor");
-			String nombre_proveedor = (String) request.getParameter("nombre_proveedor");
-			String telefono_proveedor = (String) request.getParameter("telefono_proveedor");
+			
 			System.out.println(nitproveedor + ciudad_proveedor + direccion_proveedor + nombre_proveedor + telefono_proveedor);
 			Proveedor nit = new Proveedor(nitproveedor, ciudad_proveedor, direccion_proveedor, nombre_proveedor, telefono_proveedor);
 			ctrl.actualizarProveedor(nit);
-		}/*else if(consultar.equals(boton)){
-			Integer Cedula = Integer.parseInt(request.getParameter("Cedula"));
-			ctrl.consultarUsuario(Cedula);
-		}*/else {
+			
+		}else if(consultar.equals(boton)){
+			
+			Proveedor p = ctrl.listarProveedor(nitproveedor);
+			request.setAttribute("objProveedor", p);
+			request.getRequestDispatcher("proveedores.jsp").forward(request, response);
+			
+		}else {
 			
 		}
 
