@@ -26,9 +26,15 @@
 			<h1><a href="principal.jsp">Tienda Generica</a></h1>
         </div>
         <nav>
+<<<<<<< HEAD
             <a href="#" class="b">◦ Usuarios</a>
             <a href="clientes.jsp" class="b">◦ Clientes</a>
             <a href="proveedores.jsp" class="b">◦ Proveedores</a>
+=======
+            <a href="ServletUsuarios" class="b">◦ Usuarios</a>
+            <a href="ServletClientes.jsp" class="b">◦ Clientes</a>
+            <a href="#" class="b">◦ Proveedores</a>
+>>>>>>> branch 'master' of https://github.com/edfesa90/TiendaGenericaG07.git
             <a href="productos.jsp" class="b">◦ Productos</a>
             <a href="ventas.jsp" class="b">◦ Ventas</a>
             <a href="reportes.jsp" class="b">◦ Reportes</a>
