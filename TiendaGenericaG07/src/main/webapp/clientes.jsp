@@ -21,7 +21,7 @@
         <nav>
             <a href="ServletUsuarios" class="b">- Usuarios</a>
             <a href="#" class="b">- Clientes</a>
-            <a href="proveedores.jsp" class="b">- Proveedores</a>
+            <a href="ServletProveedores" class="b">- Proveedores</a>
             <a href="productos.jsp" class="b">- Productos</a>
             <a href="ventas.jsp" class="b">- Ventas</a>
             <a href="reportes.jsp" class="b">- Reportes</a>
